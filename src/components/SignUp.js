@@ -8,7 +8,6 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 
 const Signup = () => {
-  const [err, setErr] = useState(false);
   const [displayName, idchange] = useState("");
   const [password, passwordchange] = useState("");
   const [email, emailchange] = useState("");
@@ -54,7 +53,6 @@ const Signup = () => {
     console.log(file);
     try {
       const res = createUserWithEmailAndPassword(auth, email, password);
-      let regobj = { displayName, password, email, phone };
 
       if (IsValidate()) {
         //console.log(regobj);
