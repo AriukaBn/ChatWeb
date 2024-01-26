@@ -4,7 +4,7 @@ import Login from "./components/Login";
 import Signup from "./components/SignUp";
 import ResetPass from "./components/ResetPass";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
 
 function App() {
