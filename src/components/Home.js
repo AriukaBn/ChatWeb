@@ -5,6 +5,7 @@ import MobileChat from "./chat/MobileChat";
 
 const Home = () => {
 
+  const [modal, setModal] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   
